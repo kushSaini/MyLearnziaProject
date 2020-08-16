@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+
+    background: #009bff;
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+    background: -o-linear-gradient(left, #0072ff, #00c6ff);
+    background: -moz-linear-gradient(left, #0072ff, #00c6ff);
+    background: linear-gradient(left, #0072ff, #00c6ff);
+  background-repeat: no-repeat;
+    background-size: cover;
+        
+    color:black;
+    line-height: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+ 
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+ 
+
+.navbar-brand{
+    text-align: left;
+    font-family: 'Brush Script MT';
+    font-size: 80px;
+}
+ 
+.heading h3, .heading ul {
+    text-align: center;
+    margin: 80 90 5rem 500;
+    position: fixed;
+    font-family: "Times New Roman", Times, serif;
+  bottom: 140px;
+  left: -50px;
+  width: 300px;
+  font-size: 50px;
+  color: white;
+}
+ 
+.feedback {
+    background: #f9feff;
+}
+ 
+.feedback form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+ 
+.feedback form label {
+    display: block;
+}
+ 
+.feedback form p {
+    margin: 0;
+}
+ 
+.feedback form .full {
+    grid-column: 1 / 3;
+}
+ 
+.feedback form button, .feedback form input, .feedback form textarea, .feedback form select {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+ 
+.feedback form button {
+    background: #f1da08;
+    border: 0;
+    text-transform: uppercase;
+}
+ 
+.feedback form button:hover, .feedback form button:focus {
+    background:green;
+    color: #fff;
+    outline: 0;
+    transition: background-color 0.5s ease-out;
+}
+ 
+@media(min-width:700px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+ 
+    .section > * {
+        padding: 2em;
+    }
+ 
+}
+.col-2 {
+    width: -webkit-calc((100% - 30px) / 2);
+    width: -moz-calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
+  }
+  
+  @media (max-width: 767px) {
+    .col-2 {
+      width: 100%;
+    }
+  }
+
+  .radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .radio-container input:checked ~ .checkmark {
+    background-color: #e5e5e5;
+  }
+  
+  .radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .radio-container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #57b846;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #e5e5e5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .p-t-10 {
+    padding-top: 10px;
+  }
+
+  .label {
+    font-size: 16px;
+    color: #555;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 22px;
+  }
+  
+  .input-group-icon {
+    position: relative;
+  }
