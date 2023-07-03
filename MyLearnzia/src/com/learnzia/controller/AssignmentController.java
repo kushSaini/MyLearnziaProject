@@ -30,7 +30,7 @@ public class AssignmentController extends HttpServlet {
 			String topic=request.getParameter("topic");
 		
 			String st=request.getParameter("enddate");
-			SimpleDateFormat s=new SimpleDateFormat("dd/MM/yyyy");
+			SimpleDateFormat s=new SimpleDateFormat("MM/dd/YYYY");
 			
 		
 			Date d= s.parse(st);
